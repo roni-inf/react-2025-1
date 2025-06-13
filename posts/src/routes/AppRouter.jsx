@@ -10,8 +10,8 @@ export default function AppRouter() {
     <Routes>
         <Route path={'/'} element={<Feed/>}></Route>
         <Route path={'/posts'} element={<Posts/>}></Route>
-        <Route path={'/update'} element={<Update/>}></Route>
-        <Route path={'/more'} element={<More/>}></Route>
+        <Route path={'/update/:id'} element={<Update/>}></Route>
+        <Route path={'/more/:id'} element={<More/>}></Route>
         <Route path={'*'} element={<Error/>}></Route>
     </Routes>
   )
